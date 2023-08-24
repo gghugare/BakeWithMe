@@ -110,11 +110,34 @@
       <div class="form-group">
         <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="For any special customize cakes or more..." required=""></textarea>
         <br>
-          <button class="btn btn-default btn-send btn btn-primary"> <span class="glyphicon glyphicon-send"></span> Send </button>
+          <button class="btn btn-default btn-send btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><span class="glyphicon glyphicon-send"></span> Send </button>
+          <!-- Offcanvas start -->
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 330px;">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Personal Details</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Number</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>We'll never share your deatails with anyone else.
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+          <!-- Offcanvas end -->
         </div>
     </form>
   </div>
-
+  
      <!-- END section  -->
 
      <div class="container mt-4 bg-dark-subtle "  >
